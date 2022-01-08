@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap");
 
+/* BASE STYLES */
 html,
 body {
   box-sizing: border-box;
@@ -15,11 +16,21 @@ body {
     url("data:image/svg+xml,%3Csvg viewBox='0 0 376 376' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
   overflow-x: hidden;
   scrollbar-width: none;
+  cursor: crosshair;
 }
 
 *::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }
+
+/* MARQUEE TOP AND BORDERS */
+
+.head-border {
+  position: sticky;
+  top: 1px;
+}
+
+/* MAIN SECTION */
 
 .main--section {
   display: flex;
@@ -32,7 +43,7 @@ body {
   -webkit-filter: blur(0.2px);
 }
 
-/* Título */
+/* TITLE */
 .main_heading {
   /*transform: rotate(90deg);*/
   margin: 0px 25px;
@@ -42,7 +53,7 @@ body {
   filter: blur(1.5px);
 }
 
-/* Texto de info/about Kunturina */
+/* INFO TEXT */
 .main_text {
   width: 320px;
   margin: 10px 25px;
@@ -52,12 +63,6 @@ body {
   /*letter-spacing: 5px;*/
   text-align: justify;
   filter: blur(1px);
-}
-
-/* Borders */
-.border {
-  border-bottom: 2px solid white;
-  filter: blur(1.5px);
 }
 
 a {
@@ -70,7 +75,22 @@ a:hover {
   color: rgb(206, 204, 204);
 }
 
-/* Marquee */
+/* END MAIN SECTION */
+
+/* BORDERS */
+.border {
+  border-top: 1.5px solid white;
+  border-bottom: 1.5px solid white;
+  filter: blur(1.5px);
+}
+
+/* FOOTER SECTION MARQUEE AND BORDERS */
+.footer-border {
+  position: sticky;
+  bottom: 1px;
+}
+
+/* MARQUEE */
 .marquee {
   position: relative;
   white-space: nowrap;
