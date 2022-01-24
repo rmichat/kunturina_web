@@ -1,4 +1,3 @@
-Este proyecto es el primero que encaro para Kunturina, el estudio multifacético que encaré en el año 2017 para darle una faceta más profesional a mi trabajo como diseñador.
-Hoy siento que estoy más capacitado para ponerme a jugar con los conocimientos que fui adquiriendo estos últimos meses. No hay mejor momento que ahora.
-El proyecto consta en una landing-page sencilla... por ahora.
-Quiero ir trabajandola con un enfoque minimalista pero llamativo y divertido.
+Diseño de la web de Kunturina Studio, estudio/agencia que creé en 2018 para ser la cara de mis trabajos como diseñador.
+Hoy en pleno aprendizaje, uso esta web como proyecto personal para afilar conocimientos y, a su vez, aportarle una cara más profesional a Kunturina como marca.
+El proyecto arrancó como una landing-page sencilla que, en un futuro, va a ser la casa de más proyectos y trabajos que salgan bajo con este sello.
