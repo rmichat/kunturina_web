@@ -37,7 +37,6 @@ body {
 
 /* TITLE */
 .main_heading {
-  /*transform: rotate(90deg);*/
   margin: 30px 25px;
   font-weight: 500;
   color: white;
@@ -47,12 +46,11 @@ body {
 
 /* INFO TEXT */
 .main_text {
-  width: 320px;
+  width: 350px;
   margin: 0px 25px;
   font-size: 1.3em;
   font-weight: 300;
   color: white;
-  /*letter-spacing: 5px;*/
   text-align: justify;
   /*filter: blur(1px);*/
 }
@@ -119,7 +117,7 @@ a:hover {
 }
 
 /* MEDIA QUERIES */
-@media (max-width: 375px), (orientation: landscape) {
+@media only screen and (max-width: 375px) {
   .main_text {
     font-size: 1.1em;
     margin: 10px 25px 35px;
