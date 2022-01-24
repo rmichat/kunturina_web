@@ -8,12 +8,15 @@ body {
   font-family: Spline Sans, sans-serif;
   margin: 0;
   padding: 0;
-  /*background: rgb(0, 0, 0);
-  background: radial-gradient(circle, #000000 0%, #f73a3a 30%);*/
-  filter: contrast(160%) brightness(100%);
+
+  background: rgb(0, 0, 0);
+  /*background: radial-gradient(circle, #000000 0%, #f73a3a 30%);*/
+
+  /*filter: contrast(160%) brightness(100%);
   background: linear-gradient(90deg, rgba(120, 29, 66, 1), rgba(0, 0, 0, 0)),
     linear-gradient(360deg, rgba(200, 75, 49, 1), rgba(255, 255, 255, 0)),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 376 376' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 376 376' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");*/
+
   overflow-x: hidden;
   scrollbar-width: none;
   cursor: crosshair; /* Cursor */
@@ -26,7 +29,7 @@ body {
 /* MARQUEE TOP AND BORDERS */
 
 .head-border {
-  position: sticky;
+  position: fixed;
   top: 1px;
 }
 
@@ -39,18 +42,16 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
-  filter: blur(0.2px);
-  -webkit-filter: blur(0.2px);
 }
 
 /* TITLE */
 .main_heading {
   /*transform: rotate(90deg);*/
-  margin: 0px 25px;
+  margin: 60px 25px;
   font-weight: 500;
   color: white;
   font-size: 2.5rem;
-  filter: blur(1.5px);
+  /*filter: blur(1.5px);*/
 }
 
 /* INFO TEXT */
@@ -62,7 +63,7 @@ body {
   color: white;
   /*letter-spacing: 5px;*/
   text-align: justify;
-  filter: blur(1px);
+  /*filter: blur(1px);*/
 }
 
 a {
@@ -79,14 +80,13 @@ a:hover {
 
 /* BORDERS */
 .border {
-  border-top: 1.5px solid white;
-  border-bottom: 1.5px solid white;
-  filter: blur(1.5px);
+  border-top: 2.5px solid white;
+  /* filter: blur(1.5px);*/
 }
 
 /* FOOTER SECTION MARQUEE AND BORDERS */
 .footer-border {
-  position: sticky;
+  position: fixed;
   bottom: 1px;
 }
 
@@ -99,7 +99,7 @@ a:hover {
   --move-initial: calc(-25% + var(--offset));
   --move-final: calc(-50% + var(--offset));
   color: white;
-  filter: blur(1.5px);
+  /* filter: blur(1.5px);*/
 }
 
 .marquee__inner {
@@ -107,7 +107,7 @@ a:hover {
   display: flex;
   position: relative;
   transform: translate3d(var(--move-initial), 0, 0);
-  animation: marquee 15s linear infinite;
+  animation: marquee 35s linear infinite;
   animation-play-state: running;
 }
 
