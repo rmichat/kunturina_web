@@ -57,7 +57,10 @@ body {
   font-weight: 300;
   color: white;
   text-align: justify;
-  /*filter: blur(1px);*/
+}
+
+.dash {
+  font-weight: normal;
 }
 
 a {
@@ -68,6 +71,7 @@ a {
 
 a:hover {
   color: rgb(206, 204, 204);
+  /*filter: blur(0.5px);*/
 }
 
 /* END MAIN SECTION */
